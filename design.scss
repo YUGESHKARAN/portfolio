@@ -49,7 +49,8 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    //min-height: 100vh;
+    height: auto;
     padding: 1rem;
 }
 
@@ -114,8 +115,9 @@ header .user img{
     height:17rem;
     width:17rem;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 1rem;
+    background-color: rgb(21, 160, 202);
     border:.7rem solid rgb(120, 245, 120)
     
 }
@@ -184,7 +186,7 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: left;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 2rem 15rem;
 }
 
 .home h3{
@@ -215,7 +217,7 @@ header nav ul li a:hover{
     display:flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+   // flex-wrap: wrap;
     padding: 1rem 0;
 
 
@@ -256,9 +258,10 @@ header nav ul li a:hover{
 
     width: 20rem;
     background: #222;
-    text-align: center;
+    text-align: left;
     padding: 2rem;
     margin: 2rem;
+    overflow: hidden;
 }
 
 .about .row  .counter .box span{
@@ -402,6 +405,7 @@ header nav ul li a:hover{
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
+
 }
 
 .contact .row form .box::placeholder{
@@ -471,16 +475,8 @@ header nav ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
 @media (max-width:1200px){
+    
     html{
         font-size: 55%;
     }
@@ -516,15 +512,27 @@ header nav ul li a:hover{
     html{
         font-size: 50%;
     }
+     .row {
+        flex-wrap: wrap;
+        //flex-direction: column;
+    }
+   
+    .home,.about,.education {
+        height: auto;
+    }
+  
 }
+
 
 @media (max-width:400px){
     
     header{
         left:-120%
     }
+   
     .about .row .counter .box{
         width: 100%;
+        
     }
 
     .education .box-container .box{
