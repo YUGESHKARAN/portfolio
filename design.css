@@ -232,7 +232,7 @@ header nav ul li a:hover {
 }
 
 .about .row .counter .box span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--green);
 }
 
@@ -433,9 +433,6 @@ header nav ul li a:hover {
   html {
     font-size: 50%;
   }
-  .row {
-    flex-wrap: wrap;
-  }
   .home, .about, .education {
     height: auto;
   }
@@ -445,12 +442,15 @@ header nav ul li a:hover {
     left: -120%;
   }
   .about .row .counter .box {
+    flex-basis: 100%;
     width: 100%;
   }
   .education .box-container .box {
+    flex-basis: 100%;
     width: 100%;
   }
   .portfolio .box-container .box {
+    flex-basis: 100%;
     width: 100%;
   }
   .contact .row form {
